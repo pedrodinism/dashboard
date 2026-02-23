@@ -31,4 +31,5 @@ body {
 .mainContent {
     background-color: #f5f6f7;
     grid-area: 2 / 2 / 3 / 3;
+    
 }
