@@ -32,13 +32,14 @@ body {
 }
 
 .header-bottom {
-
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .mainContent {
     background-color: #f5f6f7;
-    grid-area: 2 / 2 / 3 / 3;
-    
+    grid-area: 2 / 2 / 3 / 3;    
 }
 
 .nav-item {
@@ -89,6 +90,11 @@ input {
     border-radius: 50%;
 }
 
+.avatar.large {
+    height: 75px;
+    width: 75px;
+}
+
 .user-info {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -106,4 +112,38 @@ input {
 .search {
     display: flex;
     align-items: center;
+}
+
+button {
+    background: #1e71e3;
+    border: none;
+    color: white;
+    height: 40px;
+    min-width: 80px;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+#greeting {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 10fr;
+    padding: 0px 60px;
+    align-items: center;
+}
+
+#greeting .greeting-left {
+    grid-area: 1/1/3/2;
+}
+
+#greeting .greeting-top {
+    grid-area: 1/2/2/3;
+    font-size: large;
+    font-weight: 700;
+}
+
+#greeting .greeting-bottom {
+    grid-area: 2/2/3/3;
+    font-size: xx-large;
+    font-weight: 700;
 }
